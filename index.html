@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Dussehra Wishes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap">
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('bakk.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #dussehra-container {
+            text-align: center;
+            color: #FF6600;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        #dussehra-text {
+            font-size: 48px;
+            margin: 20px 0;
+            animation: textAnimation 4s ease infinite;
+        }
+
+        #quote {
+            font-size: 24px;
+            color: #FFD700;
+            margin: 20px 0;
+        }
+
+        #author {
+            font-size: 18px;
+            color: #FF6600;
+            margin: 20px 0;
+        }
+
+        #developer {
+            font-family: 'Pacifico', cursive;
+            font-size: 24px;
+            color: #FFD700;
+            margin-top: 20px;
+        }
+
+        #fireworks-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotate 5s linear infinite;
+        }
+
+        .firework {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #FF6600;
+            border-radius: 50%;
+            animation: fireworks 2s ease infinite;
+        }
+
+        .star {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background-color: #FFD700;
+            border-radius: 50%;
+            animation: stars 4s linear infinite;
+        }
+
+        @keyframes textAnimation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes stars {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(10px);
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        @keyframes fireworks {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="dussehra-container">
+        <h1 id="dussehra-text">Happy Dussehra!</h1>
+        <p id="quote">"As we celebrate the triumph of righteousness, may the light of Dussehra shine brightly on your path, leading you to a future filled with happiness and success."</p>
+        <p id="author">-Best Wishes from  Waghmare...</p>
+        <p id="developer">Developed by Dilip Waghmare</p>
+    </div>
+    <div id="fireworks-container">
+        <div class="firework" style="top: 10%; left: 50%;"></div>
+        <div class="firework" style="top: 50%; left: 90%;"></div>
+        <div class="firework" style="top: 90%; left: 10%;"></div>
+        <div class="firework" style="top: 10%; left: 10%;"></div>
+        <div class="firework" style="top: 50%; left: 10%;"></div>
+    </div>
+    <div id="stars">
+        <div class="star" style="top: 15%; left: 25%;"></div>
+        <div class="star" style="top: 5%; left: 60%;"></div>
+        <div class="star" style="top: 25%; left: 75%;"></div>
+        <div class="star" style="top: 45%; left: 35%;"></div>
+        <div class="star" style="top: 65%; left: 85%;"></div>
+    </div>
+</body>
+</html>
